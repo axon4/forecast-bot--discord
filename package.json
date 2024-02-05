@@ -2,8 +2,8 @@
 	"name": "forecast-bot--discord",
 	"version": "0.0.1",
 	"scripts": {
-		"start": "node src/index.js",
-		"dev": "nodemon src/index.js"
+		"start": "node index.js",
+		"dev": "nodemon index.js"
 	},
 	"dependencies": {
 		"discord.js": "^14.14.1",
