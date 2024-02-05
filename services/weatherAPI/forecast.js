@@ -25,9 +25,13 @@ async function fetchForeCast(location) {
 				temperatureMaximumF: foreCastDay.day.maxtemp_f
 			}));
 
-			return { location: locationName, forecast };
+			return { locationName, forecast };
 		})
-		.catch(console.error);
+		.catch(error => {
+			console.error(error);
+
+			throw new Error(error);
+		});
 };
 
 module.exports = { fetchForeCast };
