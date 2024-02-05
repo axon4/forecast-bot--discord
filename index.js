@@ -18,5 +18,4 @@ client.commands.set(forecastCommand.data.name, forecastCommand);
 client.commands.set(astronomicalCommand.data.name, astronomicalCommand);
 
 client.once(Events.ClientReady, clientReadyHandler);
-
 client.on(Events.InteractionCreate, interactionCreateHandler);
