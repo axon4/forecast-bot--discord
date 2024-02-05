@@ -1,9 +1,9 @@
 const { REST, Routes } = require('discord.js');
 
 async function clientReadyHandler(client) {
-	try {
-		console.log(`logged-in as: ${client.user.tag}`);
+	console.log(`logged-in as: ${client.user.tag}`);
 
+	try {
 		console.log(`loading ${client.commands.size} commands...`);
 
 		const RESTAPI = new REST({version: '10'}).setToken(process.env.DISCORD_TOKEN);
