@@ -1,4 +1,15 @@
 {
 	"name": "forecast-bot--discord",
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "nodemon src/index.js"
+	},
+	"dependencies": {
+		"discord.js": "^14.14.1",
+		"dotenv": "^16.4.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.3"
+	}
 }
