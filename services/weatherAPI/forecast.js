@@ -22,7 +22,11 @@ async function fetchForeCast(location) {
 				temperatureMinimumC: foreCastDay.day.mintemp_c,
 				temperatureMaximumC: foreCastDay.day.maxtemp_c,
 				temperatureMinimumF: foreCastDay.day.mintemp_f,
-				temperatureMaximumF: foreCastDay.day.maxtemp_f
+				temperatureMaximumF: foreCastDay.day.maxtemp_f,
+				sunrise: foreCastDay.astro.sunrise,
+				sunset: foreCastDay.astro.sunset,
+				moonrise: foreCastDay.astro.moonrise,
+				moonset: foreCastDay.astro.moonset
 			}));
 
 			return { locationName, forecast };
